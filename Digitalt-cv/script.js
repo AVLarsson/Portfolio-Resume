@@ -1,0 +1,1 @@
+gsap.from(".portrait", { duration: 8, rotation: 90, opacity: 0 });

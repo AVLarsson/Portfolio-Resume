@@ -1,0 +1,150 @@
+body {
+    max-width: 80rem;
+    margin: auto;
+}
+
+
+/* headerLeft: portrait, birthinfo. HeaderRight: about and name */
+
+.header {
+    margin: auto;
+    margin-top: 2rem;
+    height: 30rem;
+    max-width: 80rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.headerRight {
+    background-color: white;
+    width: 100%;
+    padding-left: 5rem;
+}
+
+.headerLeft {
+    background-color: white;
+    max-width: 30rem;
+}
+
+.portrait {
+    max-width: 100%;
+    height: auto;
+    display: flex;
+}
+
+.birthInfo {
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+}
+
+.aboutMe {
+    background-color: peachpuff;
+    height: 14em;
+    width: 40rem;
+    margin-top: auto;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 5mm;
+    border-radius: 1rem;
+    padding: 1rem;
+    display: flex;
+}
+
+.name {
+    background-color: white;
+    height: 10rem;
+    width: 10rem;
+    padding-left: 5rem;
+    font-family: 'Caveat', cursive;
+    font-weight: lighter;
+    font-size: 8mm;
+    color: rgb(235, 149, 44);
+}
+
+
+/* timeline mid-part of the resume */
+
+.timeline {
+    background-color: white;
+    width: auto;
+    height: 15rem;
+}
+
+
+/* bottom-part: work experience, contact, skills and language */
+
+.bottom {
+    background-color: white;
+    margin: auto;
+    height: 30rem;
+    max-width: 80rem;
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+}
+
+.bottomLeft {
+    margin: 2rem;
+    width: 40rem;
+    height: 15rem;
+}
+
+.bottomRight {
+    margin: 2rem;
+    width: 40rem;
+    height: 15rem;
+}
+
+.workXp {
+    background-color: rgb(250, 186, 129);
+    height: 15rem;
+    padding: 1rem;
+    border: 0.05rem;
+    border-style: groove;
+    border-color: rgb(0, 0, 0);
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+}
+
+.workList {
+    list-style-type: none;
+}
+
+.skills {
+    height: 15rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    color: white;
+}
+
+.contactGit {
+    background-color: rgb(250, 186, 129);
+    height: 15rem;
+    padding: 1rem;
+    border: 0.05rem;
+    border-style: groove;
+    border-color: rgb(0, 0, 0);
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+}
+
+.contactList {
+    list-style-type: none;
+}
+
+.language {
+    background-color: rgb(250, 186, 129);
+    height: 15rem;
+    padding: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border: 0.05rem;
+    border-style: groove;
+    border-color: rgb(0, 0, 0);
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+}
+
+.speaking {
+    list-style-type: none;
+}
