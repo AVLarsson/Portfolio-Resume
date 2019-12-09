@@ -8,7 +8,10 @@
     <title>Annie-Larsson.</title>
 
     <!-- CSS -->
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" media="screen and (min-width: 0) and (max-width: 599px)" href="/styles-css/mobile.css">
+    <link rel="stylesheet" media="screen and (min-width: 600px) and (max-width: 1024px)" href="/styles-css/tablet.css">
+    <link rel="stylesheet" media="screen and (min-width: 1025px)" href="/styles-css/styles.css">
+
     <!-- Fonts & icons -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300i|Open+Sans:300i&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Caveat&display=swap" rel="stylesheet">
@@ -44,7 +47,30 @@
     <!--Timeline and bottom-div with work experience, contact, skills.mm.-->
 
 
-    <div class="timeline">
+    <div class="timeline" id="tempLine">
+
+        <div class="snake-border" style="width: 50%;"></div>
+        <div class="snake-border">
+            <div class="content-container">
+                <div class="step-circle">1</div>
+                <h3>Bessemerskolan Estet Bild/School of Art</h3>
+                <p>2010-2013</p>
+            </div>
+            <div class="content-container">
+                <div class="step-circle">2</div>
+                <h3>This is a header</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+            <div class="content-container">
+                <div class="step-circle">3</div>
+                <h3>This is a header</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+        </div>
+        <div class="snake-border">This is another row</div>
+        <div class="snake-border">This is another row</div>
+
+
     </div>
 
     <div class="event-notes"></div>
@@ -54,6 +80,8 @@
         <div class="bottomLeft">
 
             <div class="workXp">
+                <h3>Education</h3>
+                <p>Bessemerskolan, School of Arts <br> 2010-2013 Sandviken, Sweden</p>
                 <h3>Work experince</h3>
                 <ul class="workList">
                     <li>Cubus</li>
