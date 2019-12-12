@@ -1,4 +1,6 @@
 var imgAnimation = gsap.timeline();
 
+gsap.from("body", { duration: 1, opacity: 0 })
+
 imgAnimation /* Picture animation */
-    .to(".portrait", { duration: 1, x })
+    .from(".portrait", { duration: 2, scale: 0.80 })
