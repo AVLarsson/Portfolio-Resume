@@ -1,9 +1,4 @@
-/*function timelineCheck() {
-    var element = document.getElementById("tempLine");
-    var screenWidth = $(document).width();
+var imgAnimation = gsap.timeline();
 
-    if (screenWidth < 600) {
-        element.parentNode.removeChild(element);
-    }
-}
-*/
+imgAnimation /* Picture animation */
+    .to(".portrait", { duration: 1, x })
