@@ -1,3 +1,13 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: rgb(253, 249, 255);
+    background: linear-gradient(76deg, rgba(253, 249, 255, 0.80015756302521) 4%, rgba(255, 242, 242, 1) 37%, rgba(255, 247, 222, 0.9262079831932774) 79%);
+}
+
 body div {
     margin: 0.8rem;
     display: flex;
@@ -18,17 +28,16 @@ body div {
 }
 
 .headerRight {
-    background-color: white;
     margin: auto;
 }
 
 .headerLeft {
-    background-color: white;
     margin: auto;
 }
 
 .portrait {
     max-width: 70%;
+    max-height: 38rem;
     height: auto;
     display: flex;
     -webkit-filter: drop-shadow(2px 2px 10px rgb(201, 200, 200));
@@ -39,6 +48,7 @@ body div {
     font-family: 'Open Sans', sans-serif;
     text-align: center;
     color: rgb(235, 149, 44);
+    margin-top: 0.5rem;
 }
 
 .aboutMe {
@@ -51,6 +61,7 @@ body div {
     border-radius: 1rem;
     padding: 1rem;
     display: flex;
+    margin-bottom: 3rem;
     text-align: left;
     -webkit-filter: drop-shadow(2px 2px 5px rgb(220, 219, 219));
     filter: drop-shadow(2px 2px 5px rgb(220, 219, 219));
@@ -62,44 +73,32 @@ body div {
 }
 
 .name {
-    background-color: white;
     font-family: 'Caveat', cursive;
     font-weight: lighter;
     font-size: 5mm;
     color: rgb(235, 149, 44);
     text-shadow: 1px 1px 1px rgb(194, 194, 194);
-    margin-bottom: 2rem;
-}
-
-
-/* timeline mid-part of the resume */
-
-.timeline {
-    background-color: rgb(116, 111, 111);
-    width: auto;
-    display: none !important;
+    margin-top: -1rem;
+    margin-bottom: 0.5rem;
 }
 
 
 /* bottom-part: work experience, contact, skills and language */
 
 .bottom {
-    background-color: white;
     margin: auto;
+    margin-top: -5rem;
     display: flex;
     justify-content: space-evenly;
     position: relative;
-    padding-bottom: 25rem;
+    z-index: -1;
 }
 
 .bottomLeft {
-    height: 18rem;
-    margin-bottom: 16rem;
     width: 91%;
 }
 
 .bottomRight {
-    height: 18rem;
     display: none !important;
 }
 
@@ -108,11 +107,10 @@ body div {
     padding: 0.8rem;
     padding-bottom: 2rem;
     border: 0.05rem;
-    border-style: groove;
-    border-color: rgb(0, 0, 0);
+    border-style: solid;
+    border-color: rgb(247, 179, 119);
     font-family: 'Open Sans', sans-serif;
     color: white;
-    margin-top: 37rem;
     width: 91%;
     display: flex;
     text-align: left;
@@ -122,29 +120,23 @@ body div {
     margin-bottom: 1rem;
 }
 
-.educationParagraph {
-    width: 13rem;
-    width: auto;
-}
-
 .workXpH3 {
     margin-bottom: 1rem;
 }
 
-h3 {
-    margin-bottom: 1rem;
+.workParent {
+    width: 90%;
 }
 
-.workXp p {
-    margin: auto;
+h3 {
+    margin-bottom: 1rem;
+    margin-top: 1rem;
 }
 
 .workList {
     list-style-type: none;
     text-align: left;
-    width: auto;
-    padding: 0;
-    margin: 0;
+    width: inherit;
 }
 
 .mobileLanguage {
@@ -153,8 +145,8 @@ h3 {
     padding: 0.8rem;
     padding-bottom: 2rem;
     border: 0.05rem;
-    border-style: groove;
-    border-color: rgb(0, 0, 0);
+    border-style: solid;
+    border-color: rgb(247, 179, 119);
     font-family: 'Open Sans', sans-serif;
     color: white;
 }
@@ -162,8 +154,6 @@ h3 {
 .speaking {
     list-style-type: none;
     width: 10rem;
-    margin: 0;
-    padding: 0;
 }
 
 .mobileContactGit {
@@ -172,8 +162,8 @@ h3 {
     padding: 0.8rem;
     padding-bottom: 2rem;
     border: 0.05rem;
-    border-style: groove;
-    border-color: rgb(0, 0, 0);
+    border-style: solid;
+    border-color: rgb(247, 179, 119);
     font-family: 'Open Sans', sans-serif;
     color: white;
 }
@@ -181,8 +171,6 @@ h3 {
 .contactList {
     list-style-type: none;
     font-size: 3.1mm;
-    padding: 0;
-    margin: 0;
 }
 
 a {

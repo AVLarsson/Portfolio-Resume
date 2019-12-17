@@ -63,61 +63,6 @@ body {
 }
 
 
-/* timeline mid-part of the resume */
-
-.timeline {
-    background-color: white;
-    width: auto;
-}
-
-* {
-    box-sizing: border-box;
-}
-
-.snake-border {
-    padding: 20px;
-    border: 3px solid gray;
-    border-radius: 50px;
-    margin-bottom: -3px;
-    min-height: 50px;
-}
-
-.snake-border:nth-child(odd) {
-    border-right: none;
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
-    margin-right: 50px;
-    padding-left: 50px;
-}
-
-.snake-border:nth-child(even) {
-    border-left: none;
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
-    margin-left: 50px;
-    padding-left: 5px;
-}
-
-.content-container {
-    display: inline-block;
-    position: relative;
-    width: 33%;
-    padding-right: 40px;
-}
-
-.step-circle {
-    position: absolute;
-    background: gray;
-    top: -36.5px;
-    color: white;
-    text-align: center;
-    width: 30px;
-    height: 30px;
-    padding: 7px 10px;
-    border-radius: 50px;
-}
-
-
 /* bottom-part: work experience, contact, skills and language */
 
 .bottom {
@@ -147,8 +92,8 @@ body {
     height: 15rem;
     padding: 1rem;
     border: 0.05rem;
-    border-style: groove;
-    border-color: rgb(0, 0, 0);
+    border-style: solid;
+    border-color: rgb(247, 179, 119);
     font-family: 'Open Sans', sans-serif;
     color: white;
 }
@@ -170,8 +115,8 @@ body {
     height: 15rem;
     padding: 1rem;
     border: 0.05rem;
-    border-style: groove;
-    border-color: rgb(0, 0, 0);
+    border-style: solid;
+    border-color: rgb(247, 179, 119);
     font-family: 'Open Sans', sans-serif;
     color: white;
 }
@@ -187,8 +132,8 @@ body {
     margin-top: 2rem;
     margin-bottom: 2rem;
     border: 0.05rem;
-    border-style: groove;
-    border-color: rgb(0, 0, 0);
+    border-style: solid;
+    border-color: rgb(247, 179, 119);
     font-family: 'Open Sans', sans-serif;
     color: white;
 }

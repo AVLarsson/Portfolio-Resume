@@ -8,8 +8,8 @@
     <title>Annie-Larsson/Portfolio</title>
 
     <!-- CSS -->
-    <link rel="stylesheet" media="screen and (min-width: 0) and (max-width: 599px)" href="/styles-css/mobile.css">
-    <link rel="stylesheet" media="screen and (min-width: 600px) and (max-width: 1024px)" href="/styles-css/tablet.css">
+    <link rel="stylesheet" media="screen and (min-width: 0) and (max-width: 767px)" href="/styles-css/mobile.css">
+    <link rel="stylesheet" media="screen and (min-width: 768px) and (max-width: 1024px)" href="/styles-css/tablet.css">
     <link rel="stylesheet" media="screen and (min-width: 1025px)" href="/styles-css/styles.css">
 
     <!-- Fonts & icons -->
@@ -18,19 +18,22 @@
     <link href="https://fonts.googleapis.com/css?family=Nothing+You+Could+Do&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css" integrity="sha384-rtJEYb85SiYWgfpCr0jn174XgJTn4rptSOQsMroFBPQSGLdOC5IbubP6lJ35qoM9" crossorigin="anonymous" />
 
-
 </head>
 
 <body>
 
     <!-- Header with self portrait and info about me-->
     <div class="header">
-        <div class="headerLeft">
+        <div class="headerLeft" data-depth="0.2">
             <img src="anniepngritad.png" alt="self portrait" class="portrait">
             <p class="birthInfo"> January 20, 1994</p>
         </div>
 
         <div class="headerRight">
+
+            <div class="name">
+                <h1 id="mName"></h1>
+            </div>
 
             <div class="aboutMe">
                 <p> <span class="firstLetter">H</span>i! I'm a Front-End Developer student currently based in Gothenburg, Sweden.<br><br> <span class="firstLetter">A</span>rt and design has been a language I adore since I was a kid. I never stop serarching
@@ -38,71 +41,41 @@
                     creative and active you got the key to move forward and to be happy.
                 </p>
             </div>
-
-            <div class="name">
-                <h1>ANNIE LARSSON</h1>
-            </div>
         </div>
     </div>
 
-    <!--Timeline and bottom-div with work experience, contact, skills.mm.-->
-
-
-    <div class="timeline" id="tempLine">
-
-        <div class="snake-border" style="width: 50%;"></div>
-        <div class="snake-border">
-            <div class="content-container">
-                <div class="step-circle">1</div>
-                <h3>Bessemerskolan, School of Arts</h3>
-                <p>2010-2013</p>
-            </div>
-            <div class="content-container">
-                <div class="step-circle">2</div>
-                <h3>Cubus</h3>
-                <p>Sales assistant</p>
-            </div>
-            <div class="content-container">
-                <div class="step-circle">3</div>
-                <h3>Rusta</h3>
-                <p>Sales assistant</p>
-            </div>
-        </div>
-        <div class="snake-border">This is another row</div>
-        <div class="snake-border">This is another row</div>
-
-
-    </div>
-
-    <div class="event-notes"></div>
-
+    <!-- Bottom-div with work experience, contact, skills.mm.-->
     <div class="bottom">
 
         <div class="bottomLeft">
 
             <div class="workXp">
-                <h3 class="educationH3">Education</h3>
-                <p class="educationParagraph">Bessemerskolan, School of Arts <br> 2010-2013 Sandviken, Sweden <br><br> Medieinstitutet, Front-End Developer <br>2019-2021 Gothenburg, Sweden </p>
-                <h3 class="workXpH3">Work experince</h3>
-                <ul class="workList">
-                    <li>Cubus Gävle 2013-2015</li>
-                    <li>Rusta Gävle/Valbo 2015-2016</li>
-                    <li>Diiza Gävle 2016</li>
-                    <li>Ascot Gävle 2016</li>
-                    <li>If If-Insurances 2017</li>
-                    <li>Scorett Gävle/Valbo 2017-2018</li>
-                    <li>Dorsia Gothenburg 2018 </li>
-                    <li>Cervera Gävle/Gothenburg 2017-2019</li>
-                </ul>
+                <div class="workParent">
+                    <h3 class="educationH3">Education</h3>
+                    <ul class="workList">
+                        <li>Bessemerskolan, School of Arts <br> 2010-2013 Sandviken, Sweden</li>
+                        <li>Medieinstitutet, Front-End Developer <br>2019-2021 Gothenburg, Sweden</li>
+                    </ul>
+                    <h3 class="workXpH3">Work experince</h3>
+                    <ul class="workList">
+                        <li>Cubus Gävle 2013-2015</li>
+                        <li>Rusta Gävle/Valbo 2015-2016</li>
+                        <li>Diiza Gävle 2016</li>
+                        <li>Ascot Gävle 2016</li>
+                        <li>If If-Insurances 2017</li>
+                        <li>Scorett Gävle/Valbo 2017-2018</li>
+                        <li>Dorsia Gothenburg 2018 </li>
+                        <li>Cervera Gävle/Gothenburg 2017-2019</li>
+                    </ul>
+                </div>
             </div>
-
 
             <div class="mobileLanguage">
                 <h3>Languages</h3>
                 <ul class="speaking">
-                    <li>HTML5/CSS3 4/10</li>
-                    <li>Javascript 3/10</li>
-                    <li>GSAP 2/10</li>
+                    <li>HTML5/CSS3 8/10</li>
+                    <li>Javascript 5/10</li>
+                    <li>GSAP 4/10</li>
 
                 </ul>
                 <h3>Software</h3>
@@ -157,14 +130,13 @@
                     </li>
                 </ul>
             </div>
-
-
         </div>
+    </div>
 
-        <!-- Gsap & Javascript -->
-        <script src="https://cdn.jsdelivr.net/npm/gsap@3.0.2/dist/gsap.min.js"></script>
-        <script src="script.js"></script>
-
+    <!-- Gsap, parallax & Javascript -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.0.2/dist/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+    <script src="script.js"></script>
 
 </body>
 

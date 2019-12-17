@@ -1,29 +1,38 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
 body {
-    max-width: 80rem;
     margin: auto;
+    background: rgb(253, 249, 255);
+    background: linear-gradient(76deg, rgba(253, 249, 255, 0.80015756302521) 4%, rgba(255, 242, 242, 1) 37%, rgba(255, 247, 222, 0.9262079831932774) 79%);
 }
 
 
 /* headerLeft: portrait, birthinfo. HeaderRight: about and name */
 
 .header {
+    background-color: rgba(255, 255, 255, 0);
     margin: auto;
     margin-top: 2rem;
     height: 30rem;
-    max-width: 80rem;
+    max-width: 95%;
     display: flex;
     justify-content: space-evenly;
 }
 
 .headerRight {
-    background-color: white;
-    width: 100%;
-    padding-left: 5rem;
+    padding-left: 1rem;
 }
 
-.headerLeft {
-    background-color: white;
-    max-width: 30rem;
+.name {
+    font-family: 'Caveat', cursive;
+    font-weight: lighter;
+    font-size: 5mm;
+    color: rgb(235, 149, 44);
+    text-shadow: 1px 1px 1px rgb(194, 194, 194);
+    margin-bottom: 2rem;
 }
 
 .portrait {
@@ -37,78 +46,61 @@ body {
 .birthInfo {
     font-family: 'Open Sans', sans-serif;
     text-align: center;
+    color: rgb(235, 149, 44);
+    margin-top: 0.8rem;
 }
 
 .aboutMe {
-    background-color: peachpuff;
-    height: 14em;
-    width: 40rem;
+    background-color: rgb(250, 186, 129);
+    color: white;
+    height: auto;
     margin-top: auto;
     font-family: 'Open Sans', sans-serif;
-    font-size: 5mm;
+    font-size: 4.5mm;
     border-radius: 1rem;
     padding: 1rem;
     display: flex;
-}
-
-.name {
-    background-color: white;
-    height: 10rem;
-    width: 10rem;
-    padding-left: 5rem;
-    font-family: 'Caveat', cursive;
-    font-weight: lighter;
-    font-size: 8mm;
-    color: rgb(235, 149, 44);
-}
-
-
-/* timeline mid-part of the resume */
-
-.timeline {
-    background-color: white;
-    width: auto;
-    height: 15rem;
+    -webkit-filter: drop-shadow(2px 2px 5px rgb(220, 219, 219));
+    filter: drop-shadow(2px 2px 5px rgb(220, 219, 219));
 }
 
 
 /* bottom-part: work experience, contact, skills and language */
 
 .bottom {
-    background-color: white;
     margin: auto;
-    height: 30rem;
-    max-width: 80rem;
     display: flex;
     justify-content: space-evenly;
     position: relative;
 }
 
 .bottomLeft {
-    margin: 2rem;
-    width: 40rem;
-    height: 15rem;
+    margin: 1rem;
 }
 
 .bottomRight {
-    margin: 2rem;
-    width: 40rem;
-    height: 15rem;
+    margin: 1rem;
 }
 
 .workXp {
     background-color: rgb(250, 186, 129);
-    height: 15rem;
     padding: 1rem;
     border: 0.05rem;
-    border-style: groove;
-    border-color: rgb(0, 0, 0);
+    border-style: solid;
+    border-color: rgb(247, 179, 119);
     font-family: 'Open Sans', sans-serif;
     color: white;
+    -webkit-filter: drop-shadow(2px 2px 5px rgb(220, 219, 219));
+    filter: drop-shadow(2px 2px 5px rgb(220, 219, 219));
 }
 
 .workList {
     list-style-type: none;
+}
+
+h3 {
+    margin-bottom: 1rem;
+    margin-top: 1rem;
 }
 
 .skills {
@@ -119,13 +111,31 @@ body {
     color: white;
 }
 
-.contactGit {
+.language {
     background-color: rgb(250, 186, 129);
-    height: 15rem;
+    margin-bottom: 2rem;
     padding: 1rem;
     border: 0.05rem;
-    border-style: groove;
-    border-color: rgb(0, 0, 0);
+    border-style: solid;
+    border-color: rgb(247, 179, 119);
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    -webkit-filter: drop-shadow(2px 2px 5px rgb(220, 219, 219));
+    filter: drop-shadow(2px 2px 5px rgb(220, 219, 219));
+}
+
+.speaking {
+    list-style-type: none;
+}
+
+.contactGit {
+    background-color: rgb(250, 186, 129);
+    width: 91%;
+    padding: 0.8rem;
+    padding-bottom: 2rem;
+    border: 0.05rem;
+    border-style: solid;
+    border-color: rgb(247, 179, 119);
     font-family: 'Open Sans', sans-serif;
     color: white;
 }
@@ -134,19 +144,21 @@ body {
     list-style-type: none;
 }
 
-.language {
-    background-color: rgb(250, 186, 129);
-    height: 15rem;
-    padding: 1rem;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    border: 0.05rem;
-    border-style: groove;
-    border-color: rgb(0, 0, 0);
-    font-family: 'Open Sans', sans-serif;
+a {
     color: white;
 }
 
-.speaking {
-    list-style-type: none;
+a:hover {
+    color: rgb(235, 149, 44);
+}
+
+
+/* Display none = hide from mobile-css */
+
+.mobileContactGit {
+    display: none !important;
+}
+
+.mobileLanguage {
+    display: none !important;
 }
