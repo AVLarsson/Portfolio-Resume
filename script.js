@@ -2,7 +2,7 @@ window.addEventListener('load', typeWriter());
 
 var imgAnimation = gsap.timeline();
 
-gsap.from("body", { duration: 1, opacity: 0 });
+gsap.from("body", { duration: 1, opacity: 1 });
 
 imgAnimation /* Picture animation */
     .from(".portrait", { duration: 2, scale: 0.80 });
