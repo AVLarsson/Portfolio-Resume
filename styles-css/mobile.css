@@ -17,17 +17,10 @@ body div {
     align-items: center;
 }
 
-
-/* headerLeft: portrait, birthinfo. HeaderRight: about and name */
-
 .header {
     width: 100%;
     flex-direction: column;
     align-items: center;
-    margin: auto;
-}
-
-.headerRight {
     margin: auto;
 }
 
@@ -51,12 +44,15 @@ body div {
     margin-top: 0.5rem;
 }
 
+.headerRight {
+    margin: auto;
+}
+
 .aboutMe {
     background-color: rgb(250, 186, 129);
     width: auto;
     font-family: 'Open Sans', sans-serif;
     font-size: 5mm;
-    font-style: normal;
     color: white;
     border-radius: 1rem;
     padding: 1rem;
@@ -82,9 +78,6 @@ body div {
     margin-bottom: 0.5rem;
 }
 
-
-/* bottom-part: work experience, contact, skills and language */
-
 .bottom {
     margin: auto;
     margin-top: -5rem;
@@ -99,6 +92,10 @@ body div {
 }
 
 .bottomRight {
+    display: none !important;
+}
+
+.dropdown {
     display: none !important;
 }
 

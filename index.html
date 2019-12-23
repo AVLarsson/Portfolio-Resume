@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<!-- Important: bottom divs dependent on device width -->
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,10 +24,8 @@
 
 <body>
 
-    <!-- Header with self portrait and info about me-->
+    <!-- Header with self portrait, dropdown for resumé and info about me-->
     <div class="header">
-
-
 
         <div class="headerLeft">
             <img src="anniepngritad.png" alt="self portrait" class="portrait">
@@ -38,7 +38,14 @@
                 <h1 id="mName"></h1>
             </div>
 
-            <div class="aboutMe">
+            <div class="dropdown">
+                <i class="fas fa-list-ul"></i>
+                <div class="dropdownContent">
+                    <li><a href="AL-cv.pdf"><i class="far fa-file-pdf"id="dropIcon"></i></a> Resumé</li>
+                </div>
+            </div>
+
+            <div class="aboutMe" id="div1">
                 <p> <span class="firstLetter">H</span>i! I'm a Front-End Developer student currently based in Gothenburg, Sweden.<br><br> <span class="firstLetter">A</span>rt and design has been a language I adore since I was a kid. I never stop serarching
                     for new styles and forms of self-expression to improve my skills. I love adventures, to be creative, design, photography, fashion, interior, travelling and the gym. <br> <br> - <span class="firstLetter">I</span> think when you are
                     creative and active you got the key to move forward and to be happy.
@@ -52,7 +59,7 @@
 
         <div class="bottomLeft">
 
-            <div class="workXp">
+            <div class="workXp" id="div2">
                 <div class="workParent">
                     <h3 class="educationH3">Education</h3>
                     <ul class="workList">
@@ -73,7 +80,7 @@
                 </div>
             </div>
 
-            <div class="mobileLanguage">
+            <div class="mobileLanguage" id="div3">
                 <h3>Languages</h3>
                 <ul class="speaking">
                     <li>HTML5/CSS3 8/10</li>
@@ -89,24 +96,21 @@
                 </ul>
             </div>
 
-            <div class="mobileContactGit">
+            <div class="mobileContactGit" id="div4">
                 <h3>Contact</h3>
                 <ul class="contactList">
                     <li><a href="AL-cv.pdf"><i class="far fa-file-pdf"></i></a> Resumé</li>
                     <li><a href="mailto:annie.larsson@medieinstitutet.se"><i class="far fa-envelope"></i></a> annie.larsson@medieinstitutet.se</li>
                     <li><a href="https://www.instagram.com/studio.larsson/"><i class="fab fa-instagram"></i></a> studio.larsson</li>
                     <li><a href="https://github.com/AVLarsson"><i class="fab fa-github"></i></a> https://github.com/AVLarsson</li>
-                    <li><a href="https://www.google.com/maps/@57.7161741,11.9450106,12.59z"><i class="fas fa-map-pin"></i></a> Sweden, swedish girl in Gothenburg</i>
-                    </li>
+                    <li><a href="https://www.google.com/maps/@57.7161741,11.9450106,12.59z"><i class="fas fa-map-pin"></i></a> Sweden, swedish girl in Gothenburg</li>
                 </ul>
             </div>
-
-
         </div>
 
         <div class="bottomRight">
 
-            <div class="language">
+            <div class="language" id="div3">
                 <h3>Languages</h3>
                 <ul class="speaking">
                     <li>HTML5/CSS3 4/10</li>
@@ -122,23 +126,21 @@
                 </ul>
             </div>
 
-            <div class="contactGit">
+            <div class="contactGit" id="div4">
                 <h3>Contact</h3>
                 <ul class="contactList">
-                    <li><a href="AL-cv.pdf"><i class="far fa-file-pdf"></i></a> Resumé</li>
                     <li><a href="mailto:annie.larsson@medieinstitutet.se"><i class="far fa-envelope"></i></a> annie.larsson@medieinstitutet.se</li>
                     <li><a href="https://www.instagram.com/studio.larsson/"><i class="fab fa-instagram"></i></a> studio.larsson</li>
                     <li><a href="https://github.com/AVLarsson"><i class="fab fa-github"></i></a> https://github.com/AVLarsson</li>
-                    <li><a href="https://www.google.com/maps/@57.7161741,11.9450106,12.59z"><i class="fas fa-map-pin"></i></a> Sweden, swedish girl in Gothenburg</i>
+                    <li><a href="https://www.google.com/maps/@57.7161741,11.9450106,12.59z"><i class="fas fa-map-pin"></i></a> Sweden, swedish girl in Gothenburg
                     </li>
                 </ul>
             </div>
         </div>
     </div>
 
-    <!-- Gsap, parallax & Javascript -->
+    <!-- Gsap & Javascript -->
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.0.2/dist/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
     <script src="script.js"></script>
 
 </body>

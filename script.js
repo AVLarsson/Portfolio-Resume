@@ -2,11 +2,9 @@ window.addEventListener('load', typeWriter());
 
 var imgAnimation = gsap.timeline();
 
-gsap.from("body", { duration: 1, opacity: 1 });
 
 imgAnimation /* Picture animation */
     .from(".portrait", { duration: 2, scale: 0.80 });
-
 
 
 function typeWriter() { /* Typewriter style on H1 (name) */
@@ -25,3 +23,23 @@ function typeWriter() { /* Typewriter style on H1 (name) */
         }
     }
 }
+
+var animation = gsap.timeline(); /* section fade in */
+
+animation
+    .from("#div1", {
+        duration: 0.8,
+        opacity: 0
+    })
+    .from("#div2", {
+        duration: 0.8,
+        opacity: 0
+    }, "+=1.7")
+    .from("#div3", {
+        duration: 0.8,
+        opacity: 0
+    })
+    .from("#div4", {
+        duration: 0.8,
+        opacity: 0
+    });
